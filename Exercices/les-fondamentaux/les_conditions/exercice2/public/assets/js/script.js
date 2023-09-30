@@ -1,12 +1,16 @@
-// Déclaration de la variable
-let num = '40';
+// Déclaration des variables
+let num = 40;
+let message;
+
 // Conditions
 if(num % 2 == 1){  
-    console.log('chiffre impair');
+    message = 'chiffre impair';
 }else{
-    console.log('chiffre pair');
+    message = 'chiffre pair';
     }
+console.log(message)
+
 
 // autre méthode : condition Ternaire
-// num % 2 == 1 ? console.log('chiffre impair'): console.log('chiffre pair');
+// console.log(num % 2 == 1 ? 'chiffre impair' : 'chiffre pair';
 
