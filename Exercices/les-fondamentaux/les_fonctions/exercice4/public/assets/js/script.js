@@ -4,7 +4,7 @@ function funct(string){
 }
     
 // autre méthode : fonction fléchée
-// let funct = (string)=>{
+// funct = (string)=>{
 //     return string.length
 // }
 
