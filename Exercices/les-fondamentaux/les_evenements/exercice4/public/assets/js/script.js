@@ -1,7 +1,8 @@
-// Création d'un tableau
-const days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
+let inputs = document.querySelectorAll("input");
+// console.log(btn)
 
-// Création et affichage d'une boucle
-days.forEach(function (day, index){
-    console.log(`${index + 1}: ${day}`);}
-)
+inputs.forEach(function(input) {
+        input.addEventListener("click", function (){
+            (console.log(input.value));
+        })
+    });
