@@ -1,5 +1,6 @@
+// Attention fonction déppréciée
 window.addEventListener("keydown", function (event) {
-        let str ="KeyboardEvent: key='" + event.key + "' | code='" + event.code + "'";
+        let str ="KeyboardEvent: key='" + event.keyCode + "' | code='" + event.code + "'";
         let el = document.createElement("span");
         el.innerHTML = str + "<br/>";
 

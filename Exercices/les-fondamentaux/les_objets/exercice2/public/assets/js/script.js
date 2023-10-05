@@ -7,9 +7,10 @@ let user1 = {
 };
 
 Object.defineProperty(user1, "phone", {
-    value: "0422521010",
-    writable: false,
+    value: "415-222-9670",
 });
-
-user1.phone = "415-222-9670";
 console.log(user1);
+
+// autre méthode
+// user1.phone = "415-222-9670";
+// console.log(user1);

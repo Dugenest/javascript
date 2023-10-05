@@ -6,5 +6,7 @@ let user1 = {
     birtdate:"1971-06-28",
 };
 
-delete user1.age
+const user2 = user1.getFullName = function getFullName(){
+    return this.firstname+ ' ' +this.lastname;
+};
 console.log(user1);

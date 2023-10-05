@@ -1,7 +1,15 @@
-// Déclaration des variables
-let firstname = 'Seb'
-let age = '40'
-let city = 'Amiens'
+let user1 = {
+    lastname:"Musk",
+    firstname:"Elon",
+    age:"51",
+    phone:"0422521010",
+    birtdate:"1971-06-28",
+};
 
-// Affichage
-console.log(`Bonjour je m'appelle`, firstname, `j'ai`, age, `ans et j'habite`, city)
+Object.defineProperty(user1, "age", {
+    value: null,
+});
+console.log(user1);
+
+// autre méthode
+// user1.age = null
