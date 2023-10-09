@@ -10,10 +10,6 @@ li{
     border-color: green;
 }
 
-#lastName, #Email{
-    margin-bottom: 30px;
-}
-
-#error1, #error2{
+#error{
     color: red;
 }

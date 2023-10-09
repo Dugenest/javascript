@@ -9,14 +9,18 @@
 <body>
     <h1>Mon Formulaire</h1>
     <form>
-        <label for="lastname">Lastname : </label>
-        <input type='text' name='nom' id='lastName' maxlength='20' required><br>
+        <label for="lastName">Lastname : </label>
+        <input type='text' name='lastname' id='lastName' maxlength='20' placeholder="Your Lastname" required>
+        <div>
+            <span id="error1"></span><br>
+        </div>
         
-        <label for='mail'>Email : </label>
-        <input type='email' name='mail' id='Email' required><br>
+        <label for='Email'>Email : </label>
+        <input type='email' name='email' id='Email' placeholder="Your Mail" required><span id="error2"></span><br>
+        
+
 
         <input type='submit' value='Valider' id='bouton_envoi'>
-
     </form>
     <script src="./public/assets/js/script.js"></script>
 </body>

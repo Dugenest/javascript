@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/assets/framework/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
     <title>Exercice 1</title>
 </head>
 <body>
-    <script src="./assets/js/script.js"></script>
+    <h1>Mon Formulaire</h1>
+    <form class="container">
+        <div class="row forms py-5">
+            <div class="formulaire">
+                <div class="input mb-3">
+                    <label for="lastName">Lastname : </label>
+                    <input type='text' name='lastname' id='lastName' maxlength='20' placeholder="Your Lastname" required><br>
+                </div>
+                <div class="input mb-3">
+                    <label for="firstName">Firstname : </label>
+                    <input type='text' name='firstname' id='firstName' maxlength='20' placeholder="Your firstname" required><br>
+                </div>
+                <div class="input mb-3">
+                    <label for='Email'>Email : </label>
+                    <input type='email' name='email' id='Email' placeholder="Your Mail" required><br>
+                </div>
+            </div>
+        </div>
+        <div class="input mb-3 m-5 text-center">
+            <input type='submit' value='Ajouter des personnes' id='ajout' class="btn-ajout mx-3">
+            <input type='submit' value='Valider' id='bouton_envoi'>
+        </div>
+    </form>
+    <script src="./public/assets/framework/bootstrap.min.js"></script>
+    <script src="./public/assets/js/script.js"></script>
 </body>
 </html>

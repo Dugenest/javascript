@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice 1</title>
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <link rel="stylesheet" href="./public/assets/framework/bootstrap.min.css">
+    <title>Exercice 2</title>
 </head>
 <body>
-    <script src="./assets/js/script.js"></script>
+    <h1>Mon Formulaire</h1>
+    <form>
+        <div class="input mb-3">
+            <label for="lastName">Lastname : </label>
+            <input type='text' name='lastname' id='lastName' maxlength='20' placeholder="Your Lastname" required><br>
+        </div>
+        <div class="input mb-3">
+            <label for='Email'>Email : </label>
+            <input type='email' name='email' id='Email' placeholder="Your Mail" required><br>
+        </div>
+        <div class="input mb-3">
+            <label for='Password1'>Mot de Passe : </label>
+            <input type='text' name='Password' id='Password1' placeholder="your Password" required><br>
+        </div>
+        <div class="input mb-3">
+            <label for='Password2'>Confirmation Mot de Passe : </label>
+            <input type='text' name='Password' id='Password2' placeholder="Your Password validation" required><br>
+            <span id="error"></span>
+        </div>
+        <div class="input mb-3 m-5">
+            <input type='submit' value='Valider' id='bouton_envoi'>
+        </div>
+    </form>
+    <script src="./public/assets/framework/bootstrap.min.js"></script>
+    <script src="./public/assets/js/script.js"></script>
 </body>
 </html>
