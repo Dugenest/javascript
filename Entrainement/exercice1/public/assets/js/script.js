@@ -1,4 +1,4 @@
-// Déclaration des variables et création des Regex
+// Déclaration des variables
 const lastnameText = document.getElementById("lastName"); 
 const emailText = document.getElementById("Email"); 
 const message1 = "Caractères non pris en compte !";
@@ -6,9 +6,11 @@ const message2 = "E-mail incorrect !";
 const errorMessage1 = document.getElementById("error1")
 const errorMessage2 = document.getElementById("error2")
 
+// Création des regex
 const regexLastname = /^[a-zA-Z0-9]{2,30}$/; 
 const regexEmail = /^[A-Za-z0-9.\_\.\-]+@[a-z0-9\_\-]+\.[a-z]{2,5}$/; 
 
+// Création d'un écouteur d'événement pour le lastname
 lastnameText.addEventListener("input", function () { 
 // Supprimer les classes "red" et "green" à chaque saisie 
     lastnameText.classList.remove("red", "green"); 
@@ -21,6 +23,7 @@ lastnameText.addEventListener("input", function () {
         errorMessage1.textContent = message1; }; 
 });
 
+// Création d'un écouteur d'événement pour l'email
 emailText.addEventListener("input", function () { 
     emailText.classList.remove("red", "green");  
     if (regexEmail.test(emailText.value)) { 

@@ -1,6 +1,4 @@
 // Déclaration des variables
-const lastnameText = document.querySelector("#lastName"); 
-const emailText = document.querySelector("#Email"); 
 const errorMessage = document.querySelector("#error");
 const pwdMedium = document.querySelector("#Password1");
 const pwdStrong = document.querySelector("#Password2");
