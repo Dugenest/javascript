@@ -5,14 +5,15 @@ const message1 = "Caractères non pris en compte !";
 const message2 = "E-mail incorrect !";
 const errorMessage1 = document.getElementById("error1")
 const errorMessage2 = document.getElementById("error2")
+
 const regexLastname = /^[a-zA-Z0-9]{2,30}$/; 
-const regexEmail = /^[A-Za-z0-9.\_\.\-]+@[a-z0-9_\-]+\.[a-z]{2,5}$/; 
+const regexEmail = /^[A-Za-z0-9.\_\.\-]+@[a-z0-9\_\-]+\.[a-z]{2,5}$/; 
 
 lastnameText.addEventListener("input", function () { 
 // Supprimer les classes "red" et "green" à chaque saisie 
     lastnameText.classList.remove("red", "green"); 
 // Utilisation de regexLastname.test() pour tester la valeur 
-// par défaut ici c'est == True
+// par défaut ici c'est === True
     if (regexLastname.test(lastnameText.value)) { 
         lastnameText.classList.add("green"); 
     } else { 
@@ -46,7 +47,7 @@ emailText.addEventListener("input", function () {
 
 //     result = regexUsername.test(username.value)
 //     console.log(result);
-//     if (!result) { // if (result == false)
+//     if (!result) {          // if (result == false)
 //         // bordure rouge
 //         username.classList.add('border-danger', 'border-3')
 //         usernameHelp.classList.remove('d-none');
