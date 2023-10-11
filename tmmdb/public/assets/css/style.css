@@ -1,0 +1,51 @@
+.container-fluid {
+    background-color: blue;
+    color: black;
+}
+
+h1 {
+    color: white;
+    box-shadow: 0px 5px 20px white;
+}
+
+#lesCards {
+    gap: 15px;
+}
+
+.card {
+    width: 20rem;
+    margin: 0px auto;
+    background-color: grey;
+    box-shadow: 0px 5px 20px #999;
+}
+
+.card-image {
+    margin-top: 10px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-title, .card-body {
+    width: 100%;
+}
+
+#card-title {
+    color: #273967;
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#card_note {
+    text-align: center;
+    color: #14ECE8;
+}
