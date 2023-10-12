@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/framework/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>PREZILINKS</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+        <div class="container-fluid">
+            <h1>LOCAL STORAGE</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link" id="link" href="index2.html" target="_blank">Affichage des liens</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form class="row justify-content-center">
+        <div class="mb-3 py-5">
+            <label for="lastName" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="lastName" aria-describedby="lastname" placeholder="Votre nom">
+        </div>
+        <div class="mb-3">
+            <label for="url" class="form-label">Url</label>
+            <input type="url" class="form-control" id="url" placeholder="Votre lien">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary" id="btnAdd">Ajout</button>
+            <button type="submit" class="btn btn-primary" id="btnDeleted">Supprimer</button>
+        </div>
+    </form>
+    <div>
+        <p id="liens"></p>
+    </div>
+    <script src="./assets/framework/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

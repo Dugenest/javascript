@@ -1,0 +1,12 @@
+.btn {
+    width: 40%;
+    margin: 5px;
+}
+
+#btnDeleted {
+    background-color: red;
+}
+
+.form-label {
+    padding-left: 15px;
+}
