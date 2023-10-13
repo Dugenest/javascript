@@ -1,0 +1,11 @@
+.button {
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+
+td {
+    padding-left: 3px;
+    text-align: center;
+}
