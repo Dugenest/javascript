@@ -13,13 +13,17 @@ body {
     width: 100vw;
 }
 
-h1, #under {
+h1, #under, p {
     color: white;
 }
 
-.explain p {
+#word-display {
     color: white;
-    text-align: center;
+}
+
+#keyboard, p {
+    justify-content: center;
+    margin-top: 35px;
 }
 
 .button {
@@ -36,4 +40,20 @@ td {
 
 img {
     height: 40vh;
+} */
+
+
+#word-display {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-gap: 5px;
+}
+button {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
 }
