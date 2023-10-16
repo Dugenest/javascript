@@ -1,11 +1,174 @@
+// // Déclaration des variables
+// const under = document.getElementById("under");
+// const Id0 = document.getElementById("pendu_0");
+// const Id1 = document.getElementById("pendu_1");
+// const Id2 = document.getElementById("pendu_2");
+// const Id3 = document.getElementById("pendu_3");
+// const Id4 = document.getElementById("pendu_4");
+// const buttons = document.querySelectorAll(".button");
+
+// Id0.classList.remove("d-none");
+
+// // Création d'un tableau de mots
+// const words = ["ski", "tic", "cerf", "dock", "thym", "koala", "noeud", "tyran", "azimut", "bonzai", "coccyx", "whisky", "ballast", "djembe", "iceberg", "ukulele", "brouhaha", "diapason", "scarabee", "aseptiser", "epluchage", "klaxonner", "quemander", "xylophone", "controverse", "quadriceps", "kaleidoscope", "rhododendron", "protozoaire", "zygomatique", "chlorophylle", "anticonstitutionnellement"];
+
+// // Création du mot aléatoire
+// const wordRandom = words[Math.floor(Math.random() * words.length)];
+// console.log(wordRandom);
+
+// // Longueur du mot aléatoire
+// const numberLetter = wordRandom.length;
+// console.log(numberLetter);
+
+// // Changer le mot aléatoire en tableau
+// let array = wordRandom.split('');
+// console.log(array);
+
+// // Création des underscores en fonction de la longueur du mot
+// createUnderscores = (word) => {
+//     let underScore = [];
+//     for (let counter = 0; counter < word.length; counter++) {
+//         underScore[counter] = "_";
+//     }
+//     return underScore;
+// }
+// // underScore.innerHTML = under;
+// const underscores = createUnderscores(wordRandom);
+// console.log(underscores);
+
+// // Création du menu du jeu
+// gameMenu = () => {
+//     let menu = " ";
+//     while (menu) {
+//         if (menu === 'j') {
+//         } else if (menu === 'r') {
+//             alert("Voici les règles : \nUn mot choisi au hasard vous sera proposé sous forme de '_'. \nVous aurez 4 tentatives pour le découvrir en tapant une lettre à chaque essai. \nSi vous trouvez le mot, c'est gagné ! Sinon, la partie sera perdue.");
+//             gameMenu();
+//         } else if (menu === 'q') {
+//             alert("A bientôt ! ");
+//             break;
+//         } else {
+//             menu = prompt("Choisissez : \nj : jouer \nr : voir les règles \nq : quitter");
+//         }
+//     }
+// }
+
+// // Création d'une fonction pour observer si l'utilisateur tape bien une lettre en minuscule ou en majuscule
+// checkLetter = (letter) => {
+//     while (letter.length !== 1 || !/[a-zA-Z]/.test(letter)) {
+//         letter = prompt("Veuillez entrer une lettre svp");
+//     }
+//     return letter;
+// }
+
+// // Création d'une fonction pour surveiller le jeu
+// gameSurveillance = (underscores) => {
+//     for (const letter of underscores) {
+//         if (letter === "_") {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+// // Création d'une fonction pour comparer la touche sélectionnée avec les lettres du mot aléatoire 
+// buttons.forEach(button => {
+//     button.addEventListener("click", () => {
+//         let userLetter = button.textContent
+//         let userChoice;
+//         let pointsSet = 4;
+//         let gameInProgress = gameSurveillance(underscores);
+//     while (pointsSet > 0 && gameInProgress) {
+//         Id0.classList.remove("d-none");
+//         userChoice = checkLetter(prompt(`Le mot à trouver est le suivant :  ${underscores.join(' ')}\nVous disposez de ${pointsSet} vie(s)\nTapez une lettre :`));
+//         let userLetter = false;
+//     }
+//     for (let i = 0; i < numberLetter; i++) {
+//         if (userChoice === array[i]) {
+//                 underscores[i] = userChoice;
+//                 userLetter = true;
+//     }
+//         if (!userLetter) {
+//             pointsSet--;
+//             Id0.classList.add("d-none");
+//             Id[i].classList.remove("d-none");
+//     }
+//             gameInProgress = gameSurveillance(underscores);
+//         if (pointsSet === 0) {
+//                 alert(`Vous avez perdu. Le mot était : ${wordRandom}`);
+//                 gameMenu();
+//     }   else {
+//                 alert("Bravo, vous avez gagné !");
+//                 gameMenu();
+//             }
+//         }
+//     })
+// })
+
+
+// // Appel du Menu
+// gameMenu();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Déclaration des variables
 const under = document.getElementById("under");
+const Id0 = document.getElementById("pendu_0");
+const Id1 = document.getElementById("pendu_1");
+const Id2 = document.getElementById("pendu_2");
+const Id3 = document.getElementById("pendu_3");
+const Id4 = document.getElementById("pendu_4");
+const buttons = document.querySelectorAll(".button");
+
+Id0.classList.remove("d-none");
 
 // Création d'un tableau de mots
-const words = ["ski", "tic", "cerf", "dock", "thym", "koala", "noeud", "tyran", "azimut", "bonzai", "coccyx", "whisky", "ballast", "djembe", "iceberg", "ukulele", "brouhaha", "diapason", "scarabee", "aseptiser", "epluchage", "klaxonner", "quemander", "xylophone", "controverse", "quadriceps", "kaleidoscope", "rhododendron", "protozoaire", "zygomatique", "chlorophylle", "anticonstitutionnellement"]
+const words = ["ski", "tic", "cerf", "dock", "thym", "koala", "noeud", "tyran", "azimut", "bonzai", "coccyx", "whisky", "ballast", "djembe", "iceberg", "ukulele", "brouhaha", "diapason", "scarabee", "aseptiser", "epluchage", "klaxonner", "quemander", "xylophone", "controverse", "quadriceps", "kaleidoscope", "rhododendron", "protozoaire", "zygomatique", "chlorophylle", "anticonstitutionnellement"];
 
 // Création du mot aléatoire
 const wordRandom = words[Math.floor(Math.random() * words.length)];
-Math.floor(Math.random() * words.length);
 console.log(wordRandom);
 
 // Longueur du mot aléatoire
@@ -16,11 +179,10 @@ console.log(numberLetter);
 let array = wordRandom.split('');
 console.log(array);
 
-// Créations des underscores en fonction de la longueur du mot
+// Création des underscores en fonction de la longueur du mot
 function createUnderscores(word) {
     let underScore = [];
-    let counter = 0;
-    for (counter; counter < word.length; counter++) {
+    for (let counter = 0; counter < word.length; counter++) {
         underScore[counter] = "_";
     }
     return underScore;
@@ -28,159 +190,74 @@ function createUnderscores(word) {
 const underscores = createUnderscores(wordRandom);
 console.log(underscores);
 
-// Création d'une boucle while
-count = 0;
-while (count !== array) {
-    count++;
+// Création du menu du jeu
+function gameMenu() {
+    let menu = " ";
+    while (!menu) {
+        menu = prompt("Choisissez : \nj : jouer \nr : voir les règles \nq : quitter");
+        if (menu === 'r') {
+            alert("Voici les règles : \nUn mot choisi au hasard vous sera proposé sous forme de '_'. \nVous aurez 4 tentatives pour le découvrir en tapant une lettre à chaque essai. \nSi vous trouvez le mot, c'est gagné ! Sinon, la partie sera perdue.");
+        } else if (menu === 'q') {
+            alert("A bientôt ! ");
+            break;
+        }
+    }
+        if (menu === 'j') {
+        playGame();
+    }
 }
 
+// Création d'une fonction pour observer si l'utilisateur tape bien une lettre en minuscule ou en majuscule
+function checkLetter(letter) {
+    while (letter.length !== 1 || !/[a-zA-Z]/.test(letter)) {
+        letter = prompt("Veuillez entrer une lettre svp");
+    }
+    return letter.toLowerCase(); // Convert the letter to lowercase for consistent comparison.
+}
 
+// Création d'une fonction pour surveiller le jeu
+function gameSurveillance(underscores) {
+    for (const letter of underscores) {
+        if (letter === "_") {
+            return true;
+        }
+    }
+    return false;
+}
 
+// Main game function
+function playGame() {
+    let pointsSet = 4;
+    let gameInProgress = gameSurveillance(underscores);
+    
+    while (pointsSet > 0 && gameInProgress) {
+        const userChoice = checkLetter(prompt(`Le mot à trouver est le suivant :  ${underscores.join(' ')}\nVous disposez de ${pointsSet} vie(s)\nTapez une lettre :`));
+        let userLetter = false;
 
+        for (let i = 0; i < numberLetter; i++) {
+            if (userChoice === array[i]) {
+                underscores[i] = userChoice;
+                userLetter = true;
+            }
+        }
 
+        if (!userLetter) {
+            pointsSet--;
+            Id0.classList.add("d-none");
+            document.getElementById(`pendu_${4 - pointsSet}`).classList.remove("d-none");
+        }
+        
+        gameInProgress = gameSurveillance(underscores);
+    }
 
+    if (pointsSet === 0) {
+        alert(`Vous avez perdu. Le mot était : ${wordRandom}`);
+    } else {
+        alert("Bravo, vous avez gagné !");
+    }
 
+    gameMenu();
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Creation words list
-// const wordsList = ['dragon', 'flemme', 'bleu', 'coder', 'manger', 'jouer', 'dormir', 'monstre', 'console', 'boire', 'baleine', 'chat', 'dauphin',
-// 'huile', 'angle', 'armoire', 'banc', 'bureau', 'cabinet', 'carreau', 'chaise', 'classe', 'coin', 'couloir', 'dossier'];
-
-// // Functions Definition
-// // Choice a word
-// function computerChoose() {
-//     let index = Math.floor(Math.random() * wordsList.length);
-//     let computerChoice = wordsList[index];
-//     return computerChoice;
-// }
-
-// // Change word on array 
-// function editWord(words) {
-//     let array = words.split('');
-//     return array;    
-// }
-
-// // Change word choose to underscores
-// function underscore(words) {
-//     let underScore = [];
-//     for (let i = 0; i < words.length; i ++) {
-//         underScore[i] = "_";
-//     }
-//     return underScore;
-// }
-
-// // Check if user write one and only one letter
-// function checkLetter (letter) {
-//     while(letter.length > 1) {
-//         letter = prompt("Doucement sur le clavier !" + " " + String.fromCodePoint(0x1F609) + " " + "Une seule lettre à la fois.");
-//     }
-//     while(letter.length === 0) {
-//         letter = prompt("Veuillez entrer une lettre pour jouer.");
-//     }
-//     return letter;
-// }
-
-// // Display welcome message
-// function welcome() {
-//     alert("Bonjour,\nPassez du bon temps avec ce jeu du pendu entièrement réalisé en JavaScript.");
-// }
-
-// // Game menu
-// function gameMenu() {
-//     let menu = " ";
-//     while (menu) {
-//         if (menu === 'j') {
-//             main();
-//         }
-//         else if (menu === 'r') {
-//             alert("Voici les règles : \nUn mot choisi au hasard vous sera proposé sous forme de '_'. \nVous aurez 7 tentatives pour le découvrir en tapant une lettre à chaque essai. \nSi vous trouvez le mot, c'est gagné ! Sinon, la partie sera perdue.");
-//             gameMenu();
-//         }
-//         else if (menu === 'q') {
-//             alert("A bientôt entre deux fonctions JavaScript ! ");
-//             break;
-//         }
-//         else {
-//             menu = prompt("Choisissez : \nj : jouer \nr : voir les règles \nq : quitter");
-//         }
-//     }
-// }
-
-// // Game surveillance
-// function gameSurveillance(wordUnderscore) {
-//     let number = 0;
-//     for (const LETTER of wordUnderscore) {
-//         if (LETTER === "_") {
-//             number ++;
-//         }      
-//     }
-//     return number === 0 ?  false : true;
-// }
-
-// // Game code
-// welcome();
-
-// function main() {
-//     let userChoice;
-//     let pointsSet = 7;
-//     let life = 0;
-//     let computerChoice = computerChoose();
-//     let wordUnderscore = underscore(computerChoice);
-//     let gameInProgress = gameSurveillance(wordUnderscore);
-//     const ARRAY = editWord(computerChoice);
-
-//     while (pointsSet > 0 && gameInProgress) {
-//         userChoice = checkLetter(prompt(`Le mot a trouver est le suivant :  ${wordUnderscore} \nVous disposez de ${pointsSet} vie(s) \nTapez une lettre : ` ));
-
-//         for (let i = 0; i < ARRAY.length; i ++) {
-//             if (userChoice.toLowerCase() === ARRAY[i]) {
-//                 wordUnderscore[i] = userChoice.toLowerCase();
-//                 life ++;
-//             }
-//         }
-//         if(life < 1 ) {
-//             pointsSet --;
-//             indicator = 0;
-//         }
-//         else {
-//             life = 0;
-//         }
-//         gameInProgress = gameSurveillance(wordUnderscore);
-//     }
-//         if(pointsSet === 0) {
-//         alert(`Vous avez perdu. \nLe mot était : ${computerChoice}`);
-//         gameMenu();
-//         } 
-//         else if (!gameInProgress) {
-//         alert("Bravo, vous avez gagné !");
-//         gameMenu();
-//         }
-// }
-
-// gameMenu();
+// Appel du Menu
+gameMenu();

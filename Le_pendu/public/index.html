@@ -14,7 +14,7 @@
                 <h1>Le jeu du pendu</h1>
             </section>
             <section class="explain py-3">
-                <p>Tentez de deviner le mot secret en entrant des lettres une par une sur le clavier virtuel. Ne gaspillez pas vos coups, car si 10 de vos choix sont erronés vous tuerez le pendu et vous perdrez la partie.</p>
+                <p>Un mot choisi au hasard vous sera proposé sous forme de '_'. Vous aurez 4 tentatives pour le découvrir en tapant une lettre à chaque essai. Si vous trouvez le mot, c'est gagné ! Sinon, la partie sera perdue.</p>
             </section>
         </head>
 
@@ -47,27 +47,24 @@
                 <button class="button">Y</button>
                 <button class="button">Z</button>
             </section>
-            <section class="row">
-                <div class="letter py-5 justify-content-center">
-                    <table>
-                        <tr class="word">
-                            <p id="under"></p>
-                        </tr>
-                    </table>
-                </div>
-                <div class="hanged">
 
+            <section>
+                <div class="letter py-5 justify-content-center" id="under">
+                    
                 </div>
             </section>
+            <section>
+                <div class="gallows">
+                    <img src="./assets/img/pendu_defaut.png" alt="pendu initial" class="d-none" id="pendu_0">
+                    <img src="./assets/img/pendu1.png" alt="pendu" class="d-none" id="pendu_1">
+                    <img src="./assets/img/pendu2.png" alt="pendu" class="d-none" id="pendu_2">
+                    <img src="./assets/img/pendu3.png" alt="pendu" class="d-none" id="pendu_3">
+                    <img src="./assets/img/pendu4.png" alt="pendu" class="d-none" id="pendu_4">
+                </div>
 
-
-
-
+            </section>
 
         </main>
-
-
-
 
     </div>
     <script src="./assets/framework/bootstrap.min.js"></script>
