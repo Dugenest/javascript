@@ -10,31 +10,31 @@
 <body>
     <div class="container-fluid text-center">
         <head>
-            <section class="title">
-                <h1>Le jeu du pendu</h1>
-            </section>
-            <section class="explain py-3">
-                <p>Un mot choisi au hasard vous sera proposé sous forme de '_'. Vous aurez 4 tentatives pour le découvrir en tapant une lettre à chaque essai. Si vous trouvez le mot, c'est gagné ! Sinon, la partie sera perdue.</p>
+            <section class="row title">
+                <div class="col">
+                    <h1>Le jeu du pendu</h1>
+                    <p>Un mot choisi au hasard vous sera proposé sous forme de '_'. Vous aurez 5 tentatives pour le découvrir en tapant une lettre à chaque essai. Si vous trouvez le mot, c'est gagné ! Sinon, la partie sera perdue.</p>
+                </div>
             </section>
         </head>
 
         <main>
             <section class="row">
-                <div id="word-display"></div>
-                <div id="keyboard"></div>
+                
+                    <div class="col-12 col-md-120 py-1" id="keyboard"></div>
+                    <div class="col-12 col-md-12 py-1 d-m-grid" id="word-display"></div>
+                
             </section>
 
             <section>
-                <div class="letter py-5 justify-content-center" id="under"></div>
-            </section>
-        
-            <section>
-                <div class="gallows">
-                    <img src="./assets/img/pendu_defaut.png" alt="pendu initial" class="d-none" id="pendu_0">
-                    <img src="./assets/img/pendu1.png" alt="pendu" class="d-none" id="pendu_1">
-                    <img src="./assets/img/pendu2.png" alt="pendu" class="d-none" id="pendu_2">
-                    <img src="./assets/img/pendu3.png" alt="pendu" class="d-none" id="pendu_3">
-                    <img src="./assets/img/pendu4.png" alt="pendu" class="d-none" id="pendu_4">
+                <div class="row gallows">
+                    <div class="col py-5">
+                        <img src="./assets/img/pendu_defaut.png" alt="pendu initial" class="d-none" id="pendu_0">
+                        <img src="./assets/img/pendu1.png" alt="pendu" class="d-none pendu_1">
+                        <img src="./assets/img/pendu2.png" alt="pendu" class="d-none pendu_2">
+                        <img src="./assets/img/pendu3.png" alt="pendu" class="d-none pendu_3">
+                        <img src="./assets/img/pendu4.png" alt="pendu" class="d-none pendu_4">
+                    </div>
                 </div>
             </section>
         </main>
