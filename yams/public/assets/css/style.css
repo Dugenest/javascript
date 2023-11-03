@@ -1,0 +1,133 @@
+/* Main */
+body{
+    background-image: url(/public/assets/img/james-kemp-MbT8YwWHE0c-unsplash.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    
+}
+
+/* Header */
+.navbar{
+    height: 7vh;
+    background-color: transparent;
+    position: fixed;
+}
+
+/* .navbar-brand{
+    position: absolute;
+    top: 5vh;
+    left
+} */
+
+
+/* Dés */
+.dice-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-dice{
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #c94b2594;
+    backdrop-filter: blur(10px);
+    /* box-shadow: 0px 5px 10px #c587742d; */
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dice button{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #242424;
+    color: #FFF;
+    font-weight: bold;
+    font-size:26px;
+}
+
+.dice button:hover{
+    background-color: #242424d8;
+}
+
+.div-btn{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-lg{
+    font-size: 26px !important;
+    background-color: #c94b25e8 !important;
+    border: 0px !important;
+    font-weight: bold !important;
+    transition:.3s;
+}
+
+.btn-lg:hover{
+    transition:.3s;
+    background-color: #c94b25f8 !important;
+}
+
+/* Tableau */
+.col-arrayScore{
+    padding-top: 10vh;
+}
+
+thead th:first-child{
+    border-radius: 10px 0px 0px 0px;
+}
+thead th:nth-child(2){
+    border-radius: 0px 10px 0px 0px;
+}
+
+tbody tr:last-child th{
+    border-radius: 0px 0px 0px 10px;
+}
+
+tbody tr:last-child td{
+    border-radius: 0px 0px 10px 0px;
+}
+
+.col-arrayScore .table th{
+    background-color: #c94b25e1;
+    backdrop-filter: blur(5px);
+}
+
+.col-arrayScore .table td{
+    background-color: #c58774bd;
+    backdrop-filter: blur(5px);
+    font-size: 17px;
+}
+
+.col-arrayScore .table td button{
+    background-color: #242424;
+    backdrop-filter: blur(5px);
+    color:#fff;
+}
+
+.col-arrayScore .table tr{
+    border: 0px;
+}
+
+td button{
+    border: 0px !important;
+    border-radius: 5px;
+}
+
+/* Texte Info */
+
+.txt-info{
+    height: 70px;
+    color:#FFF;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c94b2594;
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+}
